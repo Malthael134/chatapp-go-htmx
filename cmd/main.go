@@ -1,8 +1,9 @@
 package main
 
-import "fmt"
+import "github.com/malthael134/chatapp-go-htmx/router"
 
 func main() {
-	fmt.Println("Starting program...")
+
+	router.Run(":8080")
 
 }
