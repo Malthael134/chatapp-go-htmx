@@ -1,9 +1,9 @@
 package main
 
-import "github.com/malthael134/chatapp-go-htmx/router"
+import "github.com/malthael134/chatapp-go-htmx/handler"
 
 func main() {
 
-	router.Run(":8080")
+	handler.Run(":8080")
 
 }

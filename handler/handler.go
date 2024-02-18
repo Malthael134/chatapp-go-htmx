@@ -1,10 +1,11 @@
-package router
+package handler
 
 import (
 	"fmt"
 	"net/http"
 
 	"github.com/labstack/echo/v4"
+	"github.com/malthael134/chatapp-go-htmx/handler/api"
 )
 
 func Run(port string) {
@@ -21,6 +22,8 @@ func Run(port string) {
 	e.GET("/ping", func(c echo.Context) error {
 		return c.String(http.StatusOK, "pong")
 	})
+
+	api.Setup(e)
 
 	e.Start(port)
 
