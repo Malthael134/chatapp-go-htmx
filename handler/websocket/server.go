@@ -1,5 +1,0 @@
-package wss
-
-func Setup() {
-
-}

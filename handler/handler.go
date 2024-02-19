@@ -14,7 +14,7 @@ func Run(port string) {
 
 	e.HTTPErrorHandler = func(err error, c echo.Context) {
 		if he, ok := err.(*echo.HTTPError); ok {
-			e.Logger.Error(he)
+			// e.Logger.Error(he)
 			c.String(he.Code, fmt.Sprintf("%v: %v", he.Code, he.Message))
 		}
 	}
